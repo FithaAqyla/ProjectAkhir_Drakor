@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED8ABA54-CBBA-45F5-9B30-1F52068A43C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>tugasakhirpasbd</RootNamespace>
+    <AssemblyName>tugasakhirpasbd</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="datapelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="datapelanggan.Designer.cs">
+      <DependentUpon>datapelanggan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="detail.Designer.cs">
+      <DependentUpon>detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="exeCRUDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>exeCRUDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formPilih.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formPilih.Designer.cs">
+      <DependentUpon>formPilih.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homeKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homeKasir.Designer.cs">
+      <DependentUpon>homeKasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="koneksi\Class1.cs" />
+    <Compile Include="listdrakor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listdrakor.Designer.cs">
+      <DependentUpon>listdrakor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginAadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginAadmin.Designer.cs">
+      <DependentUpon>loginAadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginKasir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginKasir.Designer.cs">
+      <DependentUpon>loginKasir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="projectakhirDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projectakhirDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projectakhirDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projectakhirDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projectakhirDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projectakhirDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projectakhirDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projectakhirDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projectakhirDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projectakhirDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projectakhirDataSetTransaksi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projectakhirDataSetTransaksi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="transaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transaksi.Designer.cs">
+      <DependentUpon>transaksi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="datapelanggan.resx">
+      <DependentUpon>datapelanggan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="detail.resx">
+      <DependentUpon>detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formPilih.resx">
+      <DependentUpon>formPilih.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homeKasir.resx">
+      <DependentUpon>homeKasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listdrakor.resx">
+      <DependentUpon>listdrakor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginAadmin.resx">
+      <DependentUpon>loginAadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginKasir.resx">
+      <DependentUpon>loginKasir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="transaksi.resx">
+      <DependentUpon>transaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="exeCRUDDataSet.xsc">
+      <DependentUpon>exeCRUDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="exeCRUDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>exeCRUDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="exeCRUDDataSet.xss">
+      <DependentUpon>exeCRUDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="projectakhirDataSet.xsc">
+      <DependentUpon>projectakhirDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="projectakhirDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projectakhirDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projectakhirDataSet.xss">
+      <DependentUpon>projectakhirDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="projectakhirDataSet1.xsc">
+      <DependentUpon>projectakhirDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="projectakhirDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projectakhirDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projectakhirDataSet1.xss">
+      <DependentUpon>projectakhirDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="projectakhirDataSet2.xsc">
+      <DependentUpon>projectakhirDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="projectakhirDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projectakhirDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projectakhirDataSet2.xss">
+      <DependentUpon>projectakhirDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="projectakhirDataSet3.xsc">
+      <DependentUpon>projectakhirDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="projectakhirDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projectakhirDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projectakhirDataSet3.xss">
+      <DependentUpon>projectakhirDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="projectakhirDataSet4.xsc">
+      <DependentUpon>projectakhirDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="projectakhirDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projectakhirDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projectakhirDataSet4.xss">
+      <DependentUpon>projectakhirDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="projectakhirDataSetTransaksi.xsc">
+      <DependentUpon>projectakhirDataSetTransaksi.xsd</DependentUpon>
+    </None>
+    <None Include="projectakhirDataSetTransaksi.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>projectakhirDataSetTransaksi.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="projectakhirDataSetTransaksi.xss">
+      <DependentUpon>projectakhirDataSetTransaksi.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2022-06-29_19-47-56.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2022-06-29_20-00-25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19-198308_back-icon-png-image-free-download-searchpng-transparent-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2022-06-29_20-34-37.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2022-06-29_20-34-32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2022-06-29_20-34-31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2022-06-29_20-34-29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2022-06-29_20-34-28.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2022-06-29_20-34-26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2022-06-29_20-34-23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2022-06-29_20-34-22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2022-06-29_20-34-19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2022-06-29_20-34-18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2022-06-29_18-46-09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64673.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
